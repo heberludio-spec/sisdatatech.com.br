@@ -42,7 +42,6 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
-        /* Efeito de reflexo para o logo 3D fornecido */
         .logo-reflection {
             position: relative;
             display: inline-block;
@@ -67,14 +66,17 @@
 <script type="importmap">
 {
   "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
     "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
 }
 </script>
 </head>
 <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
